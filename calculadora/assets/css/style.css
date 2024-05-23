@@ -1,0 +1,86 @@
+/* Reseta margem, padding e define o box-sizing para border-box para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estiliza o corpo para centralizar o conteúdo vertical e horizontalmente, e define a cor de fundo */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+/* Estiliza o container da calculadora */
+.calculator {
+  width: 300px;
+  background-color: #000000;
+  box-shadow: #00000000;
+  font-family: "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 29px 18px;
+}
+
+/* Estiliza o display do resultado */
+.result {
+  height: 75px;
+  padding: 20px;
+  text-align: right;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+/* Define o layout dos botões como uma grade com 4 colunas */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 6px;
+}
+
+/* Estiliza os botões */
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Define o botão zero para ocupar duas colunas */
+.button-zero {
+  grid-column: span 2;
+}
+
+/* Estiliza os botões com a classe bg-gray */
+.bg-gray {
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: #8b8b8b;
+}
+
+/* Estiliza os botões com a classe bg-light-gray */
+.bg-light-gray {
+  background-color: #6e6262;
+  border-radius: 50px;
+}
+
+/* Reduz a opacidade dos botões ao serem clicados */
+button:active {
+  opacity: 0.9;
+}
+
+/* Estiliza os botões com a classe bg-orange */
+.bg-orange {
+  border-radius: 50px;
+  background-color: #f2a43b;
+}
